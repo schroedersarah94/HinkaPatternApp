@@ -1,0 +1,25 @@
+<div class="home-content">
+  <div class="home-image">
+    <img src="../../assets/yarn-with-needles.png" />
+  </div>
+  <h4 class="home-greeting">Welcome, USERNAME!</h4>
+</div>
+
+<!--NOTE: put padding around app to make contents not hit sides of screen-->
+<div class="scrollmenu">
+  <mat-card *ngFor="let pattern of sharedService.userPatterns" (click)="setActivePattern(pattern); sharedService.route('pattern')" class="bg-img">
+    <mat-card-content>
+      <div>{{pattern.name}}}</div>
+      <div>Last Edited: {{pattern.lastEdited | date:'shortDate'}}</div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+<!-- flex these 3 guys, make sure icons are full height and width for clicking! ALSO MOVE THEM INTO THEIR OWN COMPONENT AT SOME POINT-->
+<mat-toolbar fxLayoutAlign="space-evenly center"  class="toolbarNav">
+  <div><mat-icon class="material-icons color_blue" >home</mat-icon></div>
+  <div><mat-icon class="material-icons color_blue" >palette</mat-icon></div>
+  <div><mat-icon class="material-icons color_blue" >settings</mat-icon></div>
+</mat-toolbar>

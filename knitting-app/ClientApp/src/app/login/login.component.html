@@ -1,0 +1,22 @@
+<mat-card class="main-login" fxFlex fxLayoutAlign="center center" >
+    <mat-form-field class="example-full-width">
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="username" matInput >
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <mat-icon matSuffix >remove_red_eye</mat-icon>
+        <mat-label>Password</mat-label>
+        <input (keyup.enter)="login()" [(ngModel)]="password" type="password" matInput >
+    </mat-form-field>
+
+    <button class="primary-button" (click)="login()" >Login</button>
+
+    <!--TODO: make this a link to send email and reset password-->
+    <h6><a>Forgot password?</a></h6>
+
+    <!--TODO: make this a link to account setup page -->
+    <br />
+    <h5 (click)="openCreateAccountDialog()"><a>New? Create an Account!</a></h5>
+</mat-card>

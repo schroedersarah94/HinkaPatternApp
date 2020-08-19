@@ -1,0 +1,19 @@
+<div>
+    <h3>Create Account</h3>
+
+    <mat-form-field class="example-full-width">
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" matInput placeholder="user@example.com" >
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="password" matInput placeholder="Minimum of 8 characters">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input [(ngModel)]="passwordCheck" matInput >
+    </mat-form-field>
+</div>

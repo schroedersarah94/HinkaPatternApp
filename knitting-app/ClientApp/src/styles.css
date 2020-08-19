@@ -1,0 +1,112 @@
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #857e9a;
+}
+
+.primary-button {
+  background-color: #6c5d9c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.primary-button:hover {
+  background-color: #63568f;
+}
+.primary-button:focus {
+  outline: none;
+}
+
+mat-icon {
+  color: #5a5a5a;
+}
+
+h6 {
+  color: #5a5a5a;
+  font-weight: 100;
+}
+
+h5 {
+  color: #5a5a5a;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+h4 {
+  color: #bfbfbf;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.toolbarNav{  
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  justify-content: space-around;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: stretch;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.scrollmenu > mat-card {
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 0;
+  width: 25vw;
+  min-width: 25vw;
+  margin: 1.1vh 1.1vw;
+}
+
+.bg-img {
+  background-image: url('assets/wrap.jpg');
+}
+.bg-img2 {
+  background-image: url('assets/Blanket.jpg');
+}
+.bg-img3 {
+  background-image: url('assets/socks.jpg');
+}
+.bg-img4 {
+  background-image: url('assets/skeins.jpg');
+}
+
+.scrollmenu > mat-card > mat-card-content {
+  position: relative;
+  margin-top: auto !important;
+  padding: 10px;
+  background-color: rgba(217, 214, 224, 0.75);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,9 @@
+.error-dialog-text {
+    font-size: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.error-dialog-button {
+    width: 100%;
+}
